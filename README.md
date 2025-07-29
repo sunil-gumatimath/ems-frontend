@@ -1,12 +1,57 @@
-# React + Vite
+# Employee Management System - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is the frontend for a simple Employee Management System (EMS). It allows users to view, add, update, and delete employee information.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+*   **List Employees:** View a list of all employees.
+*   **Add Employee:** Add a new employee to the system.
+*   **Update Employee:** Edit the details of an existing employee.
+*   **Delete Employee:** Remove an employee from the system.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+*   **React:** A JavaScript library for building user interfaces.
+*   **Vite:** A fast build tool and development server for modern web projects.
+*   **Axios:** A promise-based HTTP client for the browser and Node.js.
+*   **Bootstrap:** A popular CSS framework for building responsive, mobile-first websites.
+*   **React Router DOM:** A library for routing in React applications.
+
+## Setup and Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/sunil-gumatimath/ems-frontend.git
+    ```
+2.  **Navigate to the project directory:**
+    ```bash
+    cd ems-frontend
+    ```
+3.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+4.  **Start the development server:**
+    ```bash
+    npm run dev
+    ```
+    The application will be available at `http://localhost:3000`.
+
+## Usage
+
+Once the application is running, you can perform the following actions:
+
+*   **View all employees:** The main page displays a list of all employees.
+*   **Add a new employee:** Click the "Add Employee" button to open a form for adding a new employee.
+*   **Update an employee:** Click the "Update" button next to an employee to edit their information.
+*   **Delete an employee:** Click the "Delete" button next to an employee to remove them from the system.
+
+## API Endpoints
+
+This frontend application consumes a backend API with the following endpoints:
+
+*   `GET /api/employees`: Get all employees.
+*   `GET /api/employees/{id}`: Get an employee by their ID.
+*   `POST /api/employees`: Create a new employee.
+*   `PUT /api/employees/{id}`: Update an employee.
+*   `DELETE /api/employees/{id}`: Delete an employee.
